@@ -12,5 +12,4 @@ echoVerbose ""
 echoVerbose "+====================================================="
 echoVerbose "Sample php application runtime"
 echoVerbose "+====================================================="
-
-exec /bin/sx-php run
+startPhpService
