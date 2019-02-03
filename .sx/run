@@ -7,9 +7,24 @@
 #  https://github.com/startxfr/docker-images
 #
 
-echoNotVerbose "Sample php application runtime"
-echoVerbose ""
-echoVerbose "+====================================================="
-echoVerbose "Sample php application runtime"
-echoVerbose "+====================================================="
+cat << "EOF"
+|                                                                         _      
+|  _ __ ___  _   _  __ _ _ __  _ __         _____  ____ _ _ __ ___  _ __ | | ___ 
+| | '_ ` _ \| | | |/ _` | '_ \| '_ \ _____ / _ \ \/ / _` | '_ ` _ \| '_ \| |/ _ \
+| | | | | | | |_| | (_| | |_) | |_) |_____|  __/>  < (_| | | | | | | |_) | |  __/
+| |_| |_| |_|\__, |\__,_| .__/| .__/       \___/_/\_\__,_|_| |_| |_| .__/|_|\___|
+|            |___/      |_|   |_|       _ _           _   _        |_|
+|  _ __ _   _ _ __     __ _ _ __  _ __ | (_) ___ __ _| |_(_) ___  _ __
+| | '__| | | | '_ \   / _` | '_ \| '_ \| | |/ __/ _` | __| |/ _ \| '_ \
+| | |  | |_| | | | | | (_| | |_) | |_) | | | (_| (_| | |_| | (_) | | | |
+| |_|   \__,_|_| |_|  \__,_| .__/| .__/|_|_|\___\__,_|\__|_|\___/|_| |_|
+|                          |_|   |_|
+| 
+EOF
+
+## Execute your own php-fpm + apache daemon instance
+# /usr/sbin/php-fpm -D
+# exec /usr/sbin/httpd -D FOREGROUND > $LOG_PATH/access.log &
+
+## Start default php-fpm + apache process delivered by sx lib
 startPhpService

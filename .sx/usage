@@ -1,16 +1,46 @@
 #!/bin/bash -e
-#
-# Source code usage script. Will replace the default usage script provided by STARTX.
-# This script must be run within a STARTX builder image
-#
-# For more information refer to the documentation:
-#  https://github.com/startxfr/docker-images
-#
+##
+## Source code usage script. Will replace the default usage script provided by STARTX.
+## This script must be run within a STARTX builder image
+##
+## For more information refer to the documentation:
+##  https://github.com/startxfr/docker-images
+##
 
-echoNotVerbose "Sample php application usage"
-echoVerbose ""
-echoVerbose "+====================================================="
-echoVerbose "Sample php application usage"
-echoVerbose "+====================================================="
+## Example of a personalized usage message
+cat << "EOF"
+|                                                                         _ 
+|  _ __ ___  _   _  __ _ _ __  _ __         _____  ____ _ _ __ ___  _ __ | | ___  
+| | '_ ` _ \| | | |/ _` | '_ \| '_ \ _____ / _ \ \/ / _` | '_ ` _ \| '_ \| |/ _ \ 
+| | | | | | | |_| | (_| | |_) | |_) |_____|  __/>  < (_| | | | | | | |_) | |  __/ 
+| |_| |_| |_|\__, |\__,_| .__/| .__/       \___/_/\_\__,_|_| |_| |_| .__/|_|\___| 
+|            |___/   _ _|_|   |_|  _   _                           |_|            
+|   __ _ _ __  _ __ | (_) ___ __ _| |_(_) ___  _ __    _   _ ___  __ _  __ _  ___ 
+|  / _` | '_ \| '_ \| | |/ __/ _` | __| |/ _ \| '_ \  | | | / __|/ _` |/ _` |/ _ \
+| | (_| | |_) | |_) | | | (_| (_| | |_| | (_) | | | | | |_| \__ \ (_| | (_| |  __/
+|  \__,_| .__/| .__/|_|_|\___\__,_|\__|_|\___/|_| |_|  \__,_|___/\__,_|\__, |\___|
+|       |_|   |_|                                                      |___/      
+| 
 
-exec /bin/sx-php usageS2i
+$SX_SUMMARY
+
+Usage:
+  docker run $SX_ID [command]
+
+- Run Commands:
+  pre-deploy       my pre-deploy example script (openshift)
+  post-deploy      my post-deploy example script (openshift)
+  run              my application entrypoint example 
+  isLive           Script returning container liveness status
+  isReady          Script returning application readyness status
+
+- General Commands:
+  daemon           execute the container as a daemon (keep alive)
+  usage            this message
+  info             give information about the running container
+  version          give the version of the running container
+EOF
+
+## If you want to display the standard usage message, 
+## uncomment the following line
+# genericDefaultUsage

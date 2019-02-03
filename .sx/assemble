@@ -8,11 +8,25 @@
 #  https://github.com/startxfr/docker-images
 #
 
-echoNotVerbose "Sample php application build hook"
-echoVerbose ""
-echoVerbose "+====================================================="
-echoVerbose "Sample php application build hook"
-echoVerbose "+====================================================="
+cat << "EOF"
+|                                                                         _      
+|  _ __ ___  _   _  __ _ _ __  _ __         _____  ____ _ _ __ ___  _ __ | | ___ 
+| | '_ ` _ \| | | |/ _` | '_ \| '_ \ _____ / _ \ \/ / _` | '_ ` _ \| '_ \| |/ _ \
+| | | | | | | |_| | (_| | |_) | |_) |_____|  __/>  < (_| | | | | | | |_) | |  __/
+| |_| |_| |_|\__, |\__,_| .__/| .__/       \___/_/\_\__,_|_| |_| |_| .__/|_|\___|
+|            |___/      |_|   |_|                                  |_|           
+|  _           _ _     _
+| | |__  _   _(_) | __| |
+| | '_ \| | | | | |/ _` |
+| | |_) | |_| | | | (_| |
+| |_.__/ \__,_|_|_|\__,_|
+| 
+EOF
 
-# if you want to fail the build hook, exit with error code > 0
-# exit 1;
+## Execute your own build logic delivered by sx lib
+## if you want to fail this action, exit with error code > 0
+# touch $LOG_PATH/access.log
+# exit 0;
+
+## Start default php build logic delivered by sx lib
+doPhpBuild
