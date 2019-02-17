@@ -30,3 +30,4 @@ EOF
 
 ## Start default php build logic delivered by sx lib
 doPhpBuild
+exit 0;

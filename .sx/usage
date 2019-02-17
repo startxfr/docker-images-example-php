@@ -41,6 +41,7 @@ Usage:
   version          give the version of the running container
 EOF
 
+exit 0;
 ## If you want to display the standard usage message, 
 ## uncomment the following line
 # genericDefaultUsage

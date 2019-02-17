@@ -30,3 +30,4 @@ EOF
 
 ## Start default php pre-deploy logic delivered by sx lib
 doPhpPreDeploy
+exit 0;

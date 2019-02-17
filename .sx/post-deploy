@@ -31,3 +31,4 @@ EOF
 
 ## Start default php post-deploy logic delivered by sx lib
 doPhpPostDeploy
+exit 0;
