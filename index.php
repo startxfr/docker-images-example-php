@@ -1,4 +1,4 @@
-<h1> AFP </h1>
+<h1> ENSAM </h1>
 
 
 <?php phpinfo();
