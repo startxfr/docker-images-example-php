@@ -1,4 +1,4 @@
-<h1> STARTX v2 </h1>
+<h1> Orange Demo </h1>
 
 
 <?php phpinfo();
