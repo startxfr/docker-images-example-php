@@ -1,4 +1,4 @@
-<h1> DSIA </h1>
+<h1> STARTX v2 </h1>
 
 
 <?php phpinfo();
