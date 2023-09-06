@@ -1,4 +1,4 @@
-<h1> Univ Nancy-Metz </h1>
+<h1> STARTX test 2 </h1>
 
 
 <?php phpinfo();
