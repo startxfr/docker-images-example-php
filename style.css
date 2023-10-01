@@ -28,6 +28,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 3em;
     color: black; 
 }
 
@@ -44,7 +45,7 @@ body.stable {
 }
 
 body.stable h1 {
-    color: black; 
+    color: white; 
 }
 
 body.v0 {
