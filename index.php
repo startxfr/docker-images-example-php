@@ -6,8 +6,8 @@
     <title>Ma Page</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="devel">
+<body class="stable">
     <div class="overlay"></div>
-    <h1>Version de development</h1>
+    <h1>Master branch (testing)</h1>
 </body>
 </html>
