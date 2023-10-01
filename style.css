@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/devel.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    color: black; 
+}
+
+body.devel {
+    background-image: url('./img/devel.jpg'); 
+}
+
+body.devel h1 {
+    color: black; 
+}
+
+body.stable {
+    background-image: url('./img/recette.jpg'); 
+}
+
+body.stable h1 {
+    color: black; 
+}
+
+body.v0 {
+    background-image: url('./img/v0.jpg'); 
+}
+
+body.v0 h1 {
+    color: white; 
+}
+
+body.v1 {
+    background-image: url('./img/v1.jpg'); 
+}
+
+body.v1 h1 {
+    color: blue; 
+}
+
+body.v2 {
+    background-image: url('./img/v2.jpg'); 
+}
+
+body.v2 h1 {
+    color: green; 
+}
+
+body.v3 {
+    background-image: url('./img/v3.jpg'); 
+}
+
+body.v3 h1 {
+    color: red; 
+}
