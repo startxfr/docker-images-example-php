@@ -6,8 +6,8 @@
     <title>Ma Page</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="stable">
+<body class="v0">
     <div class="overlay"></div>
-    <h1>Version de recette</h1>
+    <h1>Version 0.0.0</h1>
 </body>
 </html>
