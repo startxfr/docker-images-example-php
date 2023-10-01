@@ -8,6 +8,6 @@
 </head>
 <body class="stable">
     <div class="overlay"></div>
-    <h1>Master branch (testing)</h1>
+    <h1>Version de recette</h1>
 </body>
 </html>
